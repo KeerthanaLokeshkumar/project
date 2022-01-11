@@ -1,0 +1,27 @@
+package com.keerthana;
+import java.util.Timer;
+import java.util.TimerTask;
+public class Main extends Thread{
+    public static void main(String args[]){
+        Main t = new Main();
+        t.start();
+
+}
+@Override
+    public void run(){
+        int i = 60;
+        while (i>0){
+            System.out.println(i);
+            try
+            {
+                i--;
+                Thread.sleep(3000);
+            }
+            catch (InterruptedException e){
+
+            }
+        }
+    }
+}
+
+
